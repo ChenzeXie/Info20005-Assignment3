@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+#containerProduct, #containerAccessories {
+    display: grid;
+    grid-gap: 70px 40px;
+    grid-template-columns: repeat(5, 1fr);
+    width: 90%;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+#box {
+    width: 100%;
+    background-color: white;
+    align-content: center;
+    border-radius: 20px;
+    box-shadow: 1px 2px 6px 2px rgb(219, 219, 219);
+    border: 7px solid #ffc494; /* Adjust the border style and color here */
+}
+
+#box:hover {
+    box-shadow: 1px 6px 3px 0 rgb(185, 185, 185);
+}
+
+#containerProduct img, #containerAccessories img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#details {
+    padding: 0 15px;
+    text-transform: capitalize;
+}
+
+#box a {
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h4 {
+    font-weight: 100;
+}
+
+h2 {
+    color: rgb(3, 94, 94);
+}
+
+.search-input {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.search-input::placeholder {
+    color: #aaa;
+}
+
+.search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+/* ----------------------------- MEDIA QUERY --------------------------- */
+
+@media(max-width: 1070px) {
+    h1 {
+        font-size: 25px;
+    }
+    #containerProduct, #containerAccessories {
+        width: 95%;
+        grid-gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media(max-width: 850px) {
+    h1 {
+        width: 80%;
+        font-size: 22px;
+    }
+    #containerProduct, #containerAccessories {
+        grid-template-columns: repeat(3, 1fr);
+        width: 80%;
+    }
+}
+
+@media(max-width: 650px) {
+    h1 {
+        font-size: 20px;
+        width: 90%;
+    }
+    #containerProduct, #containerAccessories {
+        width: 90%;
+        grid-gap: 40px 20px;
+    }
+}
+
+@media(max-width: 600px) {
+    h1 {
+        width: 70%;
+    }
+    #containerProduct, #containerAccessories {
+        width: 70%;
+    }
+}
+
+@media(max-width: 505px) {
+    h1 {
+        width: 80%;
+        font-size: 18px;
+    }
+    #containerProduct, #containerAccessories {
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px 10px;
+    }
+}
+
+@media(max-width: 400px) {
+    h1 {
+        width: 90%;
+        font-size: 16px;
+    }
+    #containerProduct, #containerAccessories {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+}
