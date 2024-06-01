@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+#cartMainContainer {
+    padding: 8%;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Add padding to avoid content going under the nav bar */
+main {
+    padding-top: 60px; /* Adjust this value based on your nav bar height */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure nav bar stays on top */
+    background-color: #31363F; /* Adjust as needed */
+}
+
+#cartContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+#checkout {
+    font-size: 30px;
+    padding: 20px;
+    position: relative;
+    color: #ffffff;
+    border-radius: 20px;
+    flex-direction: column;
+    margin-left: 30px; /* Add px unit */
+    background-color: #807b7b;
+}
+
+#totalItem {
+    font-size: 16px;
+    align-self: stretch;
+    position: relative;
+    flex-direction: column;
+}
+
+img {
+    float: left;
+    margin-right: 20px;
+    height: 140px;
+    width: 140px;
+}
+
+#boxContainer {
+    flex: 5;
+    align-self: start;
+}
+
+#formContainer {
+    height: 80%;
+    background-color: #31363F; /* Light grey background */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 6px 2px rgb(219, 219, 219);
+    color: #EEEEEE;
+    font-size: 12px; /* Add px unit */
+    width: 30%;
+}
+
+#formContainer h1 {
+    font-size: 70px;
+}
+
+h3 {
+    font-size: 10px; /* Add px unit */
+}
+
+#box {
+    background-color: white;
+    box-shadow: 1px 2px 6px 2px rgb(219, 219, 219);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+#box:hover {
+    box-shadow: 0px 1px 3px 2px rgb(185, 185, 185);
+}
+
+#totalContainer {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 2px 6px 2px rgb(219, 219, 219);
+    flex: 1;
+    height: 20%;
+}
+
+#totalContainer:hover {
+    box-shadow: 0px 1px 3px 2px rgb(185, 185, 185);
+}
+
+button {
+    padding: 8px 12px;
+    background-color: rgb(250, 106, 87);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: rgb(71, 206, 206);
+}
+
+button a:focus {
+    outline: none;
+}
+
+.fullName, .email, .address, .city, .state, .zipCode {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* ----------------------------- MEDIA QUERY --------------------------- */
+
+@media(max-width: 800px) {
+    img {
+        width: 60px;
+        margin-right: 20px;
+    }
+    h3, h4 {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    #cartMainContainer {
+        padding: 30px 20px;
+    }
+    #cartContainer {
+        flex-direction: column;
+    }
+    #boxContainer,
+    #formContainer {
+        width: 100%;
+    }
+}
+
+@media(max-width: 555px) {
+    #boxContainer,
+    #formContainer {
+        width: 70%;
+        align-self: center;
+    }
+
+    #button{
+        align-self: center;
+    }
+
+    #boxContainer {
+        width: 80%;
+        align-self: center;
+
+    }
+}
