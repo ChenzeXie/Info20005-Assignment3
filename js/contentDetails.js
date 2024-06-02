@@ -205,7 +205,7 @@ function dynamicContentDetails(ob)
 //     httpRequest.send();
 // }
 function fetchAndDisplayContent(id) {
-    fetch('Info20005-Assignment3//data.json')
+    fetch('Info20005-Assignment3/data.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
