@@ -151,7 +151,7 @@ let httpRequest = new XMLHttpRequest();
 let totalAmount = 0;
 
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('data.json')
+    fetch('/data.json')
         .then(response => response.json())
         .then(contentTitle => {
             let counter = Number(document.cookie.split(',')[1].split('=')[1]);
