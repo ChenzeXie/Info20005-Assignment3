@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Payment Options Modal</title>
+    <link rel="stylesheet" href="css/payment.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
+</head>
+<body>
+    <!-- Payment Options Modal -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Make a Payment</h2>
+            <div class="order-summary">
+                <p>Cost: $360</p>
+                <p>Discounts: $0</p>
+                <p>Freight: $10</p>
+                <p>Total: $370</p>
+            </div>
+            <form id="paymentForm">
+                <div class="payment-option">
+                    <input type="radio" id="creditCard" name="paymentMethod" value="creditCard" checked>
+                    <label for="creditCard">Credit Card</label>
+                </div>
+                <div class="credit-card-info">
+                    <label for="cardNumber">Card number</label>
+                    <input type="text" id="cardNumber" name="cardNumber" required>
+                    
+                    <label for="nameOnCard">Name on card</label>
+                    <input type="text" id="nameOnCard" name="nameOnCard" required>
+                    
+                    <label for="expDate">Expiration date (MM / YY)</label>
+                    <input type="text" id="expDate" name="expDate" required>
+                    
+                    <label for="securityCode">Security code</label>
+                    <input type="text" id="securityCode" name="securityCode" required>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="paypal" name="paymentMethod" value="paypal">
+                    <label for="paypal">PayPal</label>
+                </div>
+                <div class="actions">
+                    
+                    <button type="submit" onclick="payNow()">Pay now</button>
+                    <button type="button" class="back">Back</button>
+                </div>
+                
+                <script>
+                    function payNow() {
+                        document.getElementById("paymentForm").reset();
+
+                        window.location.href = "orderPlaced.html";
+                    }
+                </script>
+                
+            </form>
+        </div>
+    </div>
+
+    <script src="/cart.js"></script>
+</body>
+</html>
