@@ -1,0 +1,144 @@
+[
+    {
+      "id": "1",
+      "name": "Premium Blend Dog Food",
+      "preview": "https://www.thepetexpress.co.uk/blog-admin/wp-content/uploads/2013/05/tpe-blog-5.jpg",
+      "photos": [
+        "https://www.thepetexpress.co.uk/blog-admin/wp-content/uploads/2013/05/tpe-blog-5.jpg",
+        "https://cdn11.bigcommerce.com/s-dximk2jkxu/images/stencil/640w/products/157/442/16607__51333.1704372469.jpg?c=1",
+        "https://cdn11.bigcommerce.com/s-dximk2jkxu/images/stencil/640w/products/169/461/16605__77759.1704372807.jpg?c=1"
+      ],
+      "description": "Introducing our premium blend dog food, meticulously formulated to provide essential nutrients for your dog's optimal health. This high-quality dog food is enriched with real meat chunks and a variety of wholesome vegetables, ensuring a delicious and nutritious meal. Our recipe is designed to meet the dietary needs of dogs of all breeds and ages, offering a balanced diet that supports their overall well-being. Give your furry friend the best nutrition possible with our premium blend dog food, crafted to promote vitality and longevity.",
+      "size": [1, 1, 0, 1, 0],
+      "isAccessory": false,
+      "brand": "Pet's Delight",
+      "price": 111
+    },
+    {
+      "id": "2",
+      "name": "Catnip Infused Crunchy Treats",
+      "preview": "https://www.petwarehouse.ph/30799-big_default/whiskas-junior-mackerel-80g-cat-wet-food.jpg",
+      "photos": [
+        "https://www.petwarehouse.ph/21642-big_default/whiskas-junior-mackerel-80g-cat-wet-food.jpg",
+        "https://www.petwarehouse.ph/30798-big_default/whiskas-junior-mackerel-80g-cat-wet-food.jpg"
+      ],
+      "description": "Introducing our crunchy treats for cats, specially infused with irresistible catnip to delight your feline friend. These treats are designed to promote dental health by helping to clean your cat's teeth and reduce plaque and tartar buildup. They also satisfy your cat's natural chewing instincts, providing a satisfying crunch that keeps them engaged and happy. Perfectly suitable for adult cats, our treats offer a delicious and healthy reward that supports their overall well-being. Treat your cat to these delightful snacks and enjoy seeing them thrive with every bite.",
+      "size": [0, 0, 0, 1, 0],
+      "isAccessory": false,
+      "brand": "Purrfection",
+      "price": 123
+    },
+    {
+      "id": "3",
+      "name": "Premium Cat Food",
+      "preview": "https://www.purina-arabia.com/sites/default/files/2022-07/CAT%20CHOW%20ADULT%20Salmon%26Tuna%206x1.5kg%20N2%20XE.jpg",
+      "photos": [
+        "https://www.purina-arabia.com/sites/default/files/styles/product_380x380/public/2022-07/CAT%20CHOW%20STERILISED%20Rich%20in%20meat%206x1.5kg%20N2%20XE%20%281%29_0.jpg?itok=Yba3EySc",
+        "https://www.purina-arabia.com/sites/default/files/styles/product_380x380/public/2022-07/CAT%20CHOW%20KITTEN%20Chicken%206x1.5kg%20N2%20XE_0.jpg?itok=i1cAZy7Z"
+      ],
+      "description": "Introducing our high-quality cat food, meticulously crafted to provide essential nutrients that support your cat's overall health and vitality. This premium cat food is formulated to meet the nutritional needs of cats at all life stages, from kittens to seniors. Each serving is designed to promote a healthy coat, strong muscles, and a robust immune system. With a balanced blend of proteins, vitamins, and minerals, our cat food ensures your feline friend receives the best possible care. Trust in our product to keep your cat happy, healthy, and full of energy throughout their life.",
+      "size": [0, 0, 0, 1, 0],
+      "isAccessory": true,
+      "brand": "Feline Feast",
+      "price": 99
+    },
+    {
+      "id": "4",
+      "name": "Fish Flavored Dental Sticks",
+      "preview": "https://s7cdn.spectrumbrands.com/~/media/Pet/DreamBone/Images/Products/Dental%20Chews/Dental%20Sticks/DBD%2000876W%20Dental%20Stick%20Charcoal%20small%2010ct/DBD00876W_DB_DentalCharcoal_Stick_10ct_G01_Front.jpg?mw=960",
+      "photos": [
+        "https://s7cdn.spectrumbrands.com/~/media/Pet/DreamBone/Images/Products/Dental%20Chews/Dental%20Sticks/DBD%2000873W%20Dental%20Stick%20Seaweed%20Large%206ct/DBD00873W_DB_Dental_SeaweedStick_6ct_G01_Front.jpg?mw=270",
+        "https://s7cdn.spectrumbrands.com/~/media/Pet/DreamBone/Images/Products/Dental%20Chews/Dental%20Sticks/DBD%2000872W%20Dental%20Stick%20Seaweed%2010ct/DBD00872W_Dental_SeaweekStick_10CT_G01_Front.jpg?mw=270"
+      ],
+      "description": "Introducing our dental sticks for dogs, featuring a delicious fish flavor that your canine companion will love. These dental sticks are specifically designed to help reduce tartar and plaque buildup, promoting healthier teeth and gums. Additionally, they help to freshen your dog's breath, making those close moments more enjoyable. Suitable for dogs of all breeds, our dental sticks offer an effective and tasty solution for maintaining your dog's oral hygiene. Give your dog the gift of a healthier smile with our fish-flavored dental sticks.",
+      "size": [1, 0, 0, 0, 0],
+      "isAccessory": false,
+      "brand": "Fresh Breath",
+      "price": 79
+    },
+    {
+      "id": "6",
+      "name": "Premium Blend Dog Food",
+      "preview": "https://www.thepetexpress.co.uk/blog-admin/wp-content/uploads/2013/05/tpe-blog-5.jpg",
+      "photos": [
+        "https://www.thepetexpress.co.uk/blog-admin/wp-content/uploads/2013/05/tpe-blog-5.jpg",
+        "https://cdn11.bigcommerce.com/s-dximk2jkxu/images/stencil/640w/products/157/442/16607__51333.1704372469.jpg?c=1",
+        "https://cdn11.bigcommerce.com/s-dximk2jkxu/images/stencil/640w/products/169/461/16605__77759.1704372807.jpg?c=1"
+      ],
+      "description": "Introducing our premium blend dog food, meticulously formulated to provide essential nutrients for your dog's optimal health. This high-quality dog food is enriched with real meat chunks and a variety of wholesome vegetables, ensuring a delicious and nutritious meal. Our recipe is designed to meet the dietary needs of dogs of all breeds and ages, offering a balanced diet that supports their overall well-being. Give your furry friend the best nutrition possible with our premium blend dog food, crafted to promote vitality and longevity.",
+      "size": [1, 1, 0, 1, 0],
+      "isAccessory": false,
+      "brand": "Pet's Delight",
+      "price": 111
+    },
+    {
+      "id": "6",
+      "name": "Junior Chicken Cat Food",
+      "preview": "https://www.purina-arabia.com/sites/default/files/2022-03/FRISKIES%20Cat%20CiG%20Duck%20Pouch_0.jpg",
+      "photos": [
+        "https://www.purina-arabia.com/sites/default/files/2022-03/FRISKIES%20JUNIOR%20Cat%20CiG%20ChknPch_0.jpg",
+        "https://www.purina-arabia.com/sites/default/files/styles/product_380x380/public/2022-07/CAT%20CHOW%20KITTEN%20Chicken%206x1.5kg%20N2%20XE_0.jpg?itok=i1cAZy7Z"
+      ],
+      "description": "Your kitten needs a special nutrition for a healthy and happy development. Give him a great start in life with Friskies Junior, so that he can surprise and delight your home every day!",
+      "size": [0, 0, 0, 1, 0],
+      "isAccessory": true,
+      "brand": "Feline Feast",
+      "price": 99
+    },
+    {
+      "id": "7",
+      "name": "Premium Cat Food",
+      "preview": "https://www.purina-arabia.com/sites/default/files/2022-07/CAT%20CHOW%20ADULT%20Salmon%26Tuna%206x1.5kg%20N2%20XE.jpg",
+      "photos": [
+        "https://www.purina-arabia.com/sites/default/files/styles/product_380x380/public/2022-07/CAT%20CHOW%20STERILISED%20Rich%20in%20meat%206x1.5kg%20N2%20XE%20%281%29_0.jpg?itok=Yba3EySc",
+        "https://www.purina-arabia.com/sites/default/files/styles/product_380x380/public/2022-07/CAT%20CHOW%20KITTEN%20Chicken%206x1.5kg%20N2%20XE_0.jpg?itok=i1cAZy7Z"
+      ],
+      "description": "Introducing our high-quality cat food, expertly formulated to provide essential nutrients that support your cat's overall health and vitality. This premium cat food is designed to cater to the nutritional needs of cats at all life stages, from playful kittens to mature adults. Each meal is enriched with a balanced blend of proteins, vitamins, and minerals to promote a healthy coat, strong muscles, and a robust immune system. Our carefully crafted recipe ensures your cat enjoys optimal health and well-being throughout their life. Trust our high-quality cat food to keep your feline friend thriving and full of energy every day.",
+      "size": [0, 0, 0, 1, 0],
+      "isAccessory": false,
+      "brand": "Feline Feast",
+      "price": 99
+    },
+    {
+        "id": "8",
+        "name": "FRISKIES Prime Filets",
+        "preview": "https://www.purina-arabia.com/sites/default/files/2022-03/Friskies%20Prime%20Filets%20Chicken%205.50%20OZ_0.jpg",
+        "photos": [
+          "https://www.purina-arabia.com/sites/default/files/styles/product_380x380/public/2022-07/CAT%20CHOW%20STERILISED%20Rich%20in%20meat%206x1.5kg%20N2%20XE%20%281%29_0.jpg?itok=Yba3EySc",
+          "https://www.purina-arabia.com/sites/default/files/styles/product_380x380/public/2022-07/CAT%20CHOW%20KITTEN%20Chicken%206x1.5kg%20N2%20XE_0.jpg?itok=i1cAZy7Z"
+        ],
+        "description": "Made with real chicken, shredded chunks offer a tender, tempting texture and 100% complete and balanced nutrition for adult cats, including all essential nutrients to support maintenance and strong, lean muscles through high-quality protein.",
+        "size": [0, 0, 0, 1, 0],
+        "isAccessory": true,
+        "brand": "Feline Feast",
+        "price": 99
+    },
+    {
+        "id": "9",
+        "name": "Tuna Puree With Chicken Flakes",
+        "preview": "https://www.purina-arabia.com/sites/default/files/2022-05/FANCY%20FEAST%C2%AE%20Adult%20Puree%20Kiss%20Tuna%20Puree%20With%20Chicken%20Flakes%20Wet%20Cat%20Treats_0.jpg",
+        "photos": [
+          "https://www.purina-arabia.com/sites/default/files/styles/product_380x380/public/2022-07/CAT%20CHOW%20STERILISED%20Rich%20in%20meat%206x1.5kg%20N2%20XE%20%281%29_0.jpg?itok=Yba3EySc",
+          "https://www.purina-arabia.com/sites/default/files/styles/product_380x380/public/2022-07/CAT%20CHOW%20KITTEN%20Chicken%206x1.5kg%20N2%20XE_0.jpg?itok=i1cAZy7Z"
+        ],
+        "description": "Introducing an irresistibly smooth and creamy treat that your cat will absolutely adore. Lovingly prepared with real tuna, this delectable treat is enhanced with delicious chicken flakes, providing a rich and flavorful experience that will delight your feline friend. Each serving is crafted with care to ensure a texture and taste that will keep your cat coming back for more. Treat your cat to this luxurious blend, and enjoy watching them savor every bite of this premium, lovingly made treat.",
+        "size": [0, 0, 0, 1, 0],
+        "isAccessory": false,
+        "brand": "Feline Feast",
+        "price": 99
+    },
+    {
+        "id": "10",
+        "name": "Small & Mini Puppy Dry Dog Food",
+        "preview": "https://www.purina-arabia.com/sites/default/files/2023-12/07613035123809_C1L1_44152329.png",
+        "photos": [
+          "https://www.purina-arabia.com/sites/default/files/2023-12/a.jpg",
+          "https://www.purina-arabia.com/sites/default/files/styles/product_380x380/public/2022-07/CAT%20CHOW%20KITTEN%20Chicken%206x1.5kg%20N2%20XE_0.jpg?itok=i1cAZy7Z"
+        ],
+        "description": "Introducing an irresistibly smooth and creamy treat that your cat will absolutely adore. Lovingly prepared with real tuna, this delectable treat is enhanced with delicious chicken flakes, providing a rich and flavorful experience that will delight your feline friend. Each serving is crafted with care to ensure a texture and taste that will keep your cat coming back for more. Treat your cat to this luxurious blend, and enjoy watching them savor every bite of this premium, lovingly made treat.",
+        "size": [0, 0, 0, 1, 0],
+        "isAccessory": true,
+        "brand": "Feline Feast",
+        "price": 99
+      }
+  ]

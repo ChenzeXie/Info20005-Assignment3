@@ -1,3 +1,13 @@
+
+load("footer.html");
+function load(url)
+{
+    req = new XMLHttpRequest();
+    req.open("GET", url, false);
+    req.send(null);
+    document.getElementById(4).innerHTML = req.responseText;
+}
+
 console.clear();
 let proxyCounter = 0;
 
@@ -7,7 +17,8 @@ if (document.cookie.indexOf(',counter=') >= 0) {
 }
 
 let cartContainer = document.getElementById('cartContainer');
-
+let formContainer = document.getElementById('formContainer');
+let deliveryForm = document.getElementById('deliveryForm');
 let boxContainerDiv = document.createElement('div');
 boxContainerDiv.id = 'boxContainer';
 
@@ -65,13 +76,14 @@ function dynamicCartSection(ob, itemCounter, size, quantity) {
     boxDiv.appendChild(boxh4);
 
     cartContainer.appendChild(boxContainerDiv);
-    cartContainer.appendChild(totalContainerDiv);
+    formContainer.appendChild(totalContainerDiv);
 
     return cartContainer;
 }
 
 let totalContainerDiv = document.createElement('div');
 totalContainerDiv.id = 'totalContainer';
+
 
 let totalDiv = document.createElement('div');
 totalDiv.id = 'total';
@@ -95,7 +107,7 @@ function amountUpdate(amount) {
     totalh4.id = 'toth4';
     totalh4.appendChild(totalh4Text);
     totalDiv.appendChild(totalh4);
-    totalDiv.appendChild(buttonDiv);
+    totalContainer.appendChild(buttonDiv)
     console.log(totalh4);
 }
 function updateTotalPrice(priceChange) {
@@ -116,20 +128,32 @@ buttonTag.appendChild(buttonLink);
 
 let buttonText = document.createTextNode('Place Order');
 buttonTag.onclick = function () {
-    console.log("Order Placed"); // Log that order is placed
-    // Redirect to orderPlaced.html
-    window.location.href = 'payment.html';
+    let form = document.getElementById('deliveryForm');
+
+    if (form.checkValidity()) {
+        console.log("Order Placed"); // Log that order is placed
+        // Redirect to orderPlaced.html
+        window.location.href = 'payment.html';
+    } else {
+        console.log("Form is invalid");
+        form.reportValidity();
+    }
 };
 buttonTag.appendChild(buttonText);
+
+
+function closeModal() {
+    window.location.href = "cart.html";
+}
 
 // BACKEND CALL
 let httpRequest = new XMLHttpRequest();
 let totalAmount = 0;
-httpRequest.onreadystatechange = function () {
-    if (this.readyState === 4) {
-        if (this.status == 200) {
-            contentTitle = JSON.parse(this.responseText);
 
+document.addEventListener("DOMContentLoaded", function() {
+    fetch('data.json')
+        .then(response => response.json())
+        .then(contentTitle => {
             let counter = Number(document.cookie.split(',')[1].split('=')[1]);
             document.getElementById("totalItem").innerHTML = ('Total Items: ' + (counter + proxyCounter));
 
@@ -144,7 +168,6 @@ httpRequest.onreadystatechange = function () {
                 for (let j = i + 1; j < counter; j++) {
                     if (Number(item[j]) == Number(item[i])) {
                         itemCounter += 1;
-                        
                     }
                 }
                 let size = '500g'; // Example size, you should fetch the actual size based on the item
@@ -162,11 +185,8 @@ httpRequest.onreadystatechange = function () {
             }
             // Update payment details
             amountUpdate(totalAmount);
-        } else {
-            console.log('call failed!');
-        }
-    }
-};
-
-httpRequest.open('GET', 'https://mocki.io/v1/65e00564-c1ea-4335-ac45-6d051fb78f26 ', true);
-httpRequest.send();
+        })
+        .catch(error => {
+            console.log('call failed!', error);
+        });
+});

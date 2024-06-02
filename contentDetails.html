@@ -55,21 +55,8 @@
     <div id="containerProduct">
       <!-- JS rendered code -->
     </div>
-
-   
-
-    <script src="/contentDetails.js"></script>
-
     <!-- FOOTER -->
     <div id="4"></div>
-    <script>
-      load("footer.html");
-      function load(url) {
-        req = new XMLHttpRequest();
-        req.open("GET", url, false);
-        req.send(null);
-        document.getElementById(4).innerHTML = req.responseText;
-      }
-    </script>
+    <script src="/js/contentDetails.js"></script>
   </body>
 </html>

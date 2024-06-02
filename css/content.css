@@ -7,6 +7,10 @@ body {
   align-items: center;
 }
 
+.boxed {
+  font-family: "Baloo 2", sans-serif;
+}
+
 h1 {
   margin: auto;
   font-weight: 700;
@@ -177,6 +181,16 @@ h1 {
 .search-input:focus {
   border-color: #007bff;
   box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+@media (max-width: 1368px) {
+  #containerProduct img,
+  #containerAccessories img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 40%;
+  }
 }
 
 @media (max-width: 1070px) {

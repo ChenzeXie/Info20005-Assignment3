@@ -1,3 +1,11 @@
+load("footer.html");
+function load(url) {
+    req = new XMLHttpRequest();
+    req.open("GET", url, false);
+    req.send(null);
+    document.getElementById(4).innerHTML = req.responseText;
+}
+
 console.clear()
 
 let id = location.search.split('?')[1]
@@ -58,7 +66,7 @@ function dynamicContentDetails(ob)
     ProductPreviewDiv.id = 'ProductPreview'
 
     let h3ProductPreviewDiv = document.createElement('h3')
-    let h3ProductPreviewText = document.createTextNode('Product Preview')
+    let h3ProductPreviewText = document.createTextNode('Recommend')
     h3ProductPreviewDiv.appendChild(h3ProductPreviewText)
     ProductPreviewDiv.appendChild(h3ProductPreviewDiv)
 
@@ -173,12 +181,39 @@ function dynamicContentDetails(ob)
 
 
 // Function to make API call and display content details
+// function fetchAndDisplayContent(id) {
+//     let httpRequest = new XMLHttpRequest();
+//     httpRequest.onreadystatechange = function() {
+//         if (this.readyState === 4 && this.status == 200) {
+//             console.log('API call successful!');
+//             let contentDetails = JSON.parse(this.responseText);
+//             // Check if any item in the array has the matching ID
+//             let matchingProduct = contentDetails.find(Product => Product.id === id);
+//             if (matchingProduct) {
+//                 dynamicContentDetails(matchingProduct);
+//             } else {
+//                 console.log("ID doesn't match with any Product in the API response!");
+//                 console.log(contentDetails);
+//                 console.log(id);
+//             }
+//         } else {
+//             console.log('API call failed!');
+//         }
+//     };
+
+//     httpRequest.open('GET',   "https://mocki.io/v1/65e00564-c1ea-4335-ac45-6d051fb78f26",true);
+//     httpRequest.send();
+// }
 function fetchAndDisplayContent(id) {
-    let httpRequest = new XMLHttpRequest();
-    httpRequest.onreadystatechange = function() {
-        if (this.readyState === 4 && this.status == 200) {
+    fetch('data.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(contentDetails => {
             console.log('API call successful!');
-            let contentDetails = JSON.parse(this.responseText);
             // Check if any item in the array has the matching ID
             let matchingProduct = contentDetails.find(Product => Product.id === id);
             if (matchingProduct) {
@@ -188,15 +223,11 @@ function fetchAndDisplayContent(id) {
                 console.log(contentDetails);
                 console.log(id);
             }
-        } else {
-            console.log('API call failed!');
-        }
-    };
-
-    httpRequest.open('GET',   "https://mocki.io/v1/65e00564-c1ea-4335-ac45-6d051fb78f26",true);
-    httpRequest.send();
+        })
+        .catch(error => {
+            console.log('API call failed!', error);
+        });
 }
-
 
 // Checking for counter in cookies
 if (document.cookie.indexOf(',counter=') >= 0) {

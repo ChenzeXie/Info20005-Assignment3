@@ -50,17 +50,15 @@ function dynamicProductSection(ob) {
 let mainContainer = document.getElementById("mainContainer");
 let containerProduct = document.getElementById("containerProduct");
 let containerAccessories = document.getElementById("containerAccessories");
-// mainContainer.appendChild(dynamicProductSection('hello world!!'))
 
 // BACKEND CALLING
 
 let httpRequest = new XMLHttpRequest();
 
-httpRequest.onreadystatechange = function() {
-  if (this.readyState === 4) {
-    if (this.status == 200) {
-      // console.log('call successful');
-      contentTitle = JSON.parse(this.responseText);
+document.addEventListener("DOMContentLoaded", function() {
+  fetch('/data.json')
+    .then(response => response.json())
+    .then(contentTitle => {
       if (document.cookie.indexOf(",counter=") >= 0) {
         var counter = document.cookie.split(",")[1].split("=")[1];
         document.getElementById("badge").innerHTML = counter;
@@ -70,27 +68,25 @@ httpRequest.onreadystatechange = function() {
           console.log(contentTitle[i]);
           containerAccessories.appendChild(
             dynamicProductSection(contentTitle[i])
-            
           );
         } else {
           console.log(contentTitle[i]);
-         
           containerProduct.appendChild(
             dynamicProductSection(contentTitle[i])
           );
         }
       }
-    } else {
-      console.log("call failed!");
-    }
-  }
-};
-httpRequest.open(
-  "GET",
-  "https://mocki.io/v1/65e00564-c1ea-4335-ac45-6d051fb78f26 ",
-  true
-);
-httpRequest.send();
+    })
+    .catch(error => {
+      console.log("call failed!", error);
+    });
+});
+// httpRequest.open(
+//   "GET",
+//   "https://mocki.io/v1/65e00564-c1ea-4335-ac45-6d051fb78f26 ",
+//   true
+// );
+// httpRequest.send();
 
 
 // Function to filter content based on search input

@@ -39,7 +39,7 @@
            
             <div id="formContainer">
                 <h2>Delivery Details</h2>
-                <form>
+                <form id="deliveryForm">
                     <label for="fullName">Full Name:</label>
                     <input type="text" id="fullName" name="fullName" required>
         
@@ -58,11 +58,11 @@
                     <label for="country">Country:</label>
                     <select id="country" name="country" required>
                         <option value="">Select</option>
-                        <option value="usa">USA</option>
-                        <option value="uk">UK</option>
-                        <option value="canada">Canada</option>
+                        <option value="vic">Victoria</option>
+                        <option value="nsw">New South Wales</option>
+                        <option value="qls">Queensland</option>
                     </select>
-                    <input type="submit" value="Submit" onclick="r">
+                    <!-- <input type="submit" value="Submit" onclick="clickSubmit()"> -->
                 </form>
                 
             </div>
@@ -71,16 +71,6 @@
 
     <!-- FOOTER -->
     <div id="4"></div>
-    <script>
-        load("footer.html");
-        function load(url)
-        {
-            req = new XMLHttpRequest();
-            req.open("GET", url, false);
-            req.send(null);
-            document.getElementById(4).innerHTML = req.responseText;
-        }
-    </script>
-<script src="/cart.js"></script>
+    <script src="/js/cart.js"></script>
 </body>
 </html>
