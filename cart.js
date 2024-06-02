@@ -118,7 +118,7 @@ let buttonText = document.createTextNode('Place Order');
 buttonTag.onclick = function () {
     console.log("Order Placed"); // Log that order is placed
     // Redirect to orderPlaced.html
-    window.location.href = 'orderPlaced.html';
+    window.location.href = 'payment.html';
 };
 buttonTag.appendChild(buttonText);
 
@@ -168,5 +168,5 @@ httpRequest.onreadystatechange = function () {
     }
 };
 
-httpRequest.open('GET', 'https://mocki.io/v1/14a8bdf4-eeda-4e97-a3fa-c88637f88a95', true);
+httpRequest.open('GET', 'https://mocki.io/v1/65e00564-c1ea-4335-ac45-6d051fb78f26 ', true);
 httpRequest.send();

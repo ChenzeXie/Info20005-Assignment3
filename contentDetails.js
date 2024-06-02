@@ -43,7 +43,7 @@ function dynamicContentDetails(ob)
     detailsDiv.id = 'details'
 
     let h3DetailsDiv = document.createElement('h3')
-    let h3DetailsText = document.createTextNode('AUD  ' + ob.price)
+    let h3DetailsText = document.createTextNode('AUD  ' + ob.price + '.00')
     h3DetailsDiv.appendChild(h3DetailsText)
 
     let h3 = document.createElement('h3')
@@ -117,17 +117,32 @@ function dynamicContentDetails(ob)
         document.cookie = "orderId=" + order + ",counter=" + counter;
         document.getElementById("badge").innerHTML = counter;
         console.log(document.cookie);
-    
-        // Create a pop-up confirmation
-        let confirmation = confirm("Item added to cart! Do you want to view your cart?");
-        if (confirmation) {
-            // Redirect user to the cart page or display the cart
-            // Replace 'cart.html' with the actual URL of your cart page
-            window.location.href = 'cart.html';
-        }
+
+        // Show the modal
+        let modal = document.getElementById("cartModal");
+        modal.style.display = "block";
     };
     buttonTag.appendChild(buttonText)
     buyTag.appendChild(buy)
+
+    // Modal close handling
+    let modal = document.getElementById("cartModal");
+    let span = document.getElementsByClassName("close")[0];
+    let viewCartButton = document.getElementById("viewCartButton");
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    };
+
+    viewCartButton.onclick = function() {
+        window.location.href = 'cart.html';
+    };
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
 
 
 
@@ -137,6 +152,8 @@ function dynamicContentDetails(ob)
     console.log(mainContainer.appendChild(imageSectionDiv));
     mainContainer.appendChild(imageSectionDiv)
     mainContainer.appendChild(ProductDetailsDiv)
+
+    
     ProductDetailsDiv.appendChild(h1)
     ProductDetailsDiv.appendChild(h4)
     ProductDetailsDiv.appendChild(detailsDiv)
@@ -176,7 +193,7 @@ function fetchAndDisplayContent(id) {
         }
     };
 
-    httpRequest.open('GET',   "https://mocki.io/v1/14a8bdf4-eeda-4e97-a3fa-c88637f88a95",true);
+    httpRequest.open('GET',   "https://mocki.io/v1/65e00564-c1ea-4335-ac45-6d051fb78f26",true);
     httpRequest.send();
 }
 

@@ -1,45 +1,49 @@
+body {
+  margin: 0;
+  font-family: "Baloo 2", sans-serif;
+}
 
-#orderContainer
-{
-    font-family: 'Lato', sans-serif;
-    width: 80%;
-    padding-top: 250px;
-    padding-bottom: 150px;
-    margin: auto;
-    text-align: center;
+#orderContainer {
+  font-family: "Lato", sans-serif;
+  width: 80%;
+  padding-top: 250px;
+  padding-bottom: 150px;
+  margin: auto;
+  text-align: center;
 }
-#orderContainer i
-{
-    color: rgb(5, 187, 5);
-    padding-bottom: 30px;
-    font-size: 10em;
+
+#orderContainer i {
+  color: rgb(5, 187, 5);
+  font-size: 160px;
 }
-#aboutCheck p
-{
-    font-weight: 100;
-    letter-spacing: 1px;
+
+#aboutCheck p {
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: "Quicksand", sans-serif;
 }
-#aboutCheck h1
-{
-    letter-spacing: 1px;
-    word-spacing: 1px;
+
+#aboutCheck h1 {
+  letter-spacing: 1px;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 70px;
 }
 
 /* ----------------------------- MEDIA QUERY --------------------------- */
 
-@media(max-width: 700px)
-{
-    #orderContainer i
-    {
-        font-size: 8em;
-        padding-bottom: 30px;
-    }
-    h1
-    {
-        font-size: 18px;
-    }
-    p
-    {
-        font-size: 15px;
-    }
+@media (max-width: 540px) { 
+  #orderContainer i {
+    padding-bottom: 30px; 
+  }
+
+  #aboutCheck h1 {
+    font-family: "Baloo 2", sans-serif;
+    font-size: 45px;
+  }
+
+  #aboutCheck p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 25.4px;
+  }
 }

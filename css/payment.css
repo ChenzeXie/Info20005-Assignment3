@@ -1,0 +1,111 @@
+body {
+  font-family: "Baloo 2", sans-serif;
+  border-radius: 30px;
+
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+  border-radius: 30px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  border-radius: 30px;
+
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.order-summary {
+  background-color: #444444;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+.order-summary p {
+  margin: 10px 0;
+  font-family: "Quicksand", sans-serif;
+
+  color: white;
+}
+
+.payment-option {
+  margin: 15px 0;
+}
+
+.credit-card-info label {
+  display: block;
+  margin: 10px 0 5px;
+  font-family: "Quicksand", sans-serif;
+
+}
+
+.credit-card-info input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: "Quicksand", sans-serif;
+
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.actions button {
+  padding: 10px 20px;
+  background-color: #444444;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 120px;
+  font-family: "Quicksand", sans-serif;
+
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actions button.back {
+  background-color: #444444;
+}
+
+.actions button:hover {
+  background-color: #0056b3;
+}
+
+.actions button.back:hover {
+  background-color: #999;
+}
