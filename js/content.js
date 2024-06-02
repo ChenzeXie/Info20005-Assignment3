@@ -56,7 +56,7 @@ let containerAccessories = document.getElementById("containerAccessories");
 let httpRequest = new XMLHttpRequest();
 
 document.addEventListener("DOMContentLoaded", function() {
-  fetch('/data.json')
+  fetch('./data.json')
     .then(response => response.json())
     .then(contentTitle => {
       if (document.cookie.indexOf(",counter=") >= 0) {
