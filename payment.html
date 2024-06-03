@@ -55,7 +55,7 @@
                 <script>
                     function payNow() {
                         document.getElementById("paymentForm").reset();
-
+                        document.cookie = "orderId="+0 +",counter="+0;
                         window.location.href = "orderPlaced.html";
                     }
                 </script>
